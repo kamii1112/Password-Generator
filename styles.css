@@ -1,0 +1,315 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+.container1 {
+    background: #f9ede5;
+    height: 100vh;
+    width: wfull;
+}
+
+.Navbar {
+    width: 100%;
+    padding: 1.5rem;
+    padding-left: 5rem;
+}
+
+.Navbar h2 {
+    letter-spacing: 2px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+.icons1 {
+    position: absolute;
+    bottom: 2px;
+    left: -10rem;
+    width: 20rem;
+}
+
+.icons2 {
+    position: absolute;
+    top: 2px;
+    right: -5rem;
+    width: 20rem;
+}
+
+.title {
+    position: relative;
+    width: 40%;
+    height: 80vh;
+    padding: 10px 50px;
+}
+
+.insideTitle {
+    position: absolute;
+    top: 40%;
+    right: 0px;
+}
+
+.insideTitle h1 {
+    font-size: 60px;
+}
+
+.insideTitle p {
+    font-size: 20px;
+}
+
+.yellowBar {
+    width: 70%;
+    height: 2rem;
+    background: #ffca49;
+}
+
+.blackline {
+    width: 70%;
+    height: 1px;
+    background: black;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blackline2 {
+    width: 70%;
+    height: 1px;
+    background: black;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.TitleHeading {
+    position: relative;
+}
+
+.TitleHeading div {
+    position: absolute;
+    top: 55%;
+    z-index: 2;
+}
+
+.TitleHeading h1 {
+    z-index: 5;
+    position: relative;
+}
+
+.mainContent {
+    background: #d0bca8;
+    margin-left: 30px;
+    padding: 1rem;
+    width: 35%;
+}
+
+#wrapper {
+    display: grid;
+    place-items: center;
+    overflow: hidden auto;
+}
+
+.displayContainer {
+    position: relative;
+    border-radius: 1rem;
+    padding-top: 0.35rem;
+    margin: 1rem 0;
+}
+
+.displayContainer input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 1.15rem 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding-right: 3.25rem;
+}
+
+input[type="text"] {
+    font-family: "Cuprum", sans-serif;
+}
+
+
+.displayContainer input::placeholder {
+    color: white;
+    letter-spacing: 0.25rem;
+    /* opacity: ; */
+    font-size: 1.5rem;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    letter-spacing: 03px;
+}
+
+.copyBtn {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+    background-color: #d0bca8;
+    border: none;
+}
+
+.inputContainer {
+    border-radius: 1rem;
+    width: wfull;
+}
+
+.lengthContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lengthContainer p:nth-child(1) {
+    font-weight: 500;
+    color: black;
+    font-size: 1.5rem;
+
+}
+
+.lengthContainer p:nth-child(2) {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    height: 0.25rem;
+    background: white;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: black;
+    box-shadow: 0px 0px 20px 0px rgba(205, 189, 183, 0.5);
+    transition: all 100ms ease-in;
+    cursor: pointer;
+    margin-top: -3px;
+    z-index: 2;
+    position: relative;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    outline: 2px solid black;
+    background-color: black;
+    box-shadow: 0px 0px 25px 5px rgba(194, 194, 158, 0.8);
+}
+
+.check {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+.check label {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: black;
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+}
+
+.check input {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(46, 40, 40);
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.5rem;
+}
+
+
+
+.check input:checked::before {
+    position: absolute;
+    content: "✔";
+    color: black;
+    font-size: 1.05rem;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1.8px;
+}
+
+
+.strengthContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.strengthContainer p {
+    font-weight: 700;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.indicator {
+    width: 1.5em;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+#generateBtn {
+    border: none;
+    background: white;
+    width: 100%;
+    padding: 1rem 0;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Cuprum", sans-serif;
+}
+
+.shadow {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+
+#generateBtn:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+#generateBtn:active {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: scale(0.99);
+    transition: all;
+    transition-duration: 200ms;
+}
